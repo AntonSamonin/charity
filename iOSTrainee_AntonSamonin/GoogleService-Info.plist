@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>140894214299-t000ompdpf7jnroe7vi4u638ao12v0vp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.140894214299-t000ompdpf7jnroe7vi4u638ao12v0vp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA7Asvt-hYXd3sFjP0lcQtL-0PCXQuWHpQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>140894214299</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>AntonSamonin.iOSTrainee-AntonSamonin</string>
+	<key>PROJECT_ID</key>
+	<string>ios-trainee-antonsamonin</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ios-trainee-antonsamonin.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:140894214299:ios:c25c1c52f08af0ba</string>
+	<key>DATABASE_URL</key>
+	<string>https://ios-trainee-antonsamonin.firebaseio.com</string>
+</dict>
+</plist>

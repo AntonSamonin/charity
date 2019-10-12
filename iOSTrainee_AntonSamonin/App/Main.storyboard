@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="S0e-Io-btG">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBar" id="sGB-pE-dWE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="iPD-ks-CYp"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yTm-hN-lN9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.45349019765853882" green="0.6355624794960022" blue="0.27442407608032227" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZL6-Tx-H8v" kind="relationship" relationship="viewControllers" id="EKk-jl-2WZ"/>
+                        <segue destination="ea7-JL-GJR" kind="relationship" relationship="viewControllers" id="lC8-Oo-jLR"/>
+                        <segue destination="Swy-BO-HpI" kind="relationship" relationship="viewControllers" id="Tea-Cp-9XH"/>
+                        <segue destination="bWz-DU-9aU" kind="relationship" relationship="viewControllers" id="HfG-f9-vMI"/>
+                        <segue destination="bTF-wU-FsC" kind="relationship" relationship="viewControllers" id="bQB-eS-SKh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dvP-WY-sem" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1824" y="33"/>
+        </scene>
+        <!--Новости-->
+        <scene sceneID="ujQ-dH-Qx3">
+            <objects>
+                <viewController id="ZL6-Tx-H8v" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="smt-Bj-aNf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hiv-Zd-lOU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Новости" image="iconNewsGrey" id="405-N5-3SA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aij-TA-ZGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-857" y="-579"/>
+        </scene>
+        <!--Поиск-->
+        <scene sceneID="U2t-Zs-UoS">
+            <objects>
+                <viewController id="ea7-JL-GJR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wA5-as-aJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2VY-ar-z4U"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Поиск" image="iconSearchGreen" id="qey-8Z-k6L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JyQ-id-r1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-161" y="-580"/>
+        </scene>
+        <!--История-->
+        <scene sceneID="XFS-gd-ZFh">
+            <objects>
+                <viewController id="bWz-DU-9aU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I2T-kR-w5e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uEo-s8-n4n"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="История" image="iconGreenHistory" id="j7x-1p-ZbI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JiJ-rU-WVx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="-580"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="jZ4-H2-naQ">
+            <objects>
+                <viewController id="bTF-wU-FsC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Unz-4X-QeJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="scA-EU-bi2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Профиль" image="iconGreenProfile" id="qiT-Ub-HzR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzS-zS-GEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="-581"/>
+        </scene>
+        <!--navHelpController-->
+        <scene sceneID="qbp-96-gTE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Help" referencedIdentifier="navHelpController" id="Swy-BO-HpI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bQC-28-r68"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zsy-VN-8Hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-755" y="227"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconGreenHistory" width="25" height="25"/>
+        <image name="iconGreenProfile" width="25" height="25"/>
+        <image name="iconNewsGrey" width="25" height="25"/>
+        <image name="iconSearchGreen" width="25" height="25"/>
+    </resources>
+</document>

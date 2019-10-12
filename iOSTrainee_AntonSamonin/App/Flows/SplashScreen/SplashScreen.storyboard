@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QXA-LB-efR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hCF-YW-kaW">
+            <objects>
+                <navigationController id="QXA-LB-efR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hy3-Mj-y7h">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xyH-Bj-28C" kind="relationship" relationship="rootViewController" id="Efb-9h-hDJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeD-or-6Dp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-897" y="362"/>
+        </scene>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="sLQ-FT-Hkw">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="xyH-Bj-28C" customClass="SplashScreenViewController" customModule="iOSTrainee_AntonSamonin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JDv-2o-XDd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-NK-w9p">
+                                <rect key="frame" x="81.5" y="265" width="251" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="rME-9g-hWM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobile.simbirSoft" translatesAutoresizingMaskIntoConstraints="NO" id="kFM-Yy-ign">
+                                <rect key="frame" x="149" y="797.5" width="116" height="16"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="acZ-fi-sGn">
+                                <rect key="frame" x="182" y="425" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0W0-g1-gds"/>
+                                    <constraint firstAttribute="height" constant="50" id="0iI-th-XCW"/>
+                                </constraints>
+                                <color key="color" red="0.68699145317077637" green="0.74916607141494751" blue="0.77373534440994263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNI-2L-iQB">
+                                <rect key="frame" x="173" y="495" width="68" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.2862895131111145" green="0.29022341966629028" blue="0.29017096757888794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cOm-NK-w9p" firstAttribute="centerX" secondItem="Koi-w2-CG2" secondAttribute="centerX" id="Z3r-DJ-rTD"/>
+                            <constraint firstItem="acZ-fi-sGn" firstAttribute="centerX" secondItem="Koi-w2-CG2" secondAttribute="centerX" id="ezY-Il-Rcu"/>
+                            <constraint firstItem="acZ-fi-sGn" firstAttribute="top" secondItem="cOm-NK-w9p" secondAttribute="bottom" constant="86" id="haZ-yL-Ts2"/>
+                            <constraint firstItem="kFM-Yy-ign" firstAttribute="centerX" secondItem="Koi-w2-CG2" secondAttribute="centerX" id="jaI-oE-tSH"/>
+                            <constraint firstItem="Koi-w2-CG2" firstAttribute="bottom" secondItem="kFM-Yy-ign" secondAttribute="bottom" constant="48.5" id="kPc-By-jBh"/>
+                            <constraint firstItem="cOm-NK-w9p" firstAttribute="top" secondItem="Koi-w2-CG2" secondAttribute="top" constant="177" id="pGg-3p-HUw"/>
+                            <constraint firstItem="LNI-2L-iQB" firstAttribute="centerX" secondItem="Koi-w2-CG2" secondAttribute="centerX" id="w5c-23-vet"/>
+                            <constraint firstItem="LNI-2L-iQB" firstAttribute="top" secondItem="acZ-fi-sGn" secondAttribute="bottom" constant="20" id="wYD-iB-k3m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Koi-w2-CG2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BPm-Lm-IvK"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="acZ-fi-sGn" id="yRW-82-zrQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vga-FA-HhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="251" height="77"/>
+        <image name="mobile.simbirSoft" width="116" height="16"/>
+    </resources>
+</document>
